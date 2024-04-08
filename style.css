@@ -1,0 +1,307 @@
+*{
+    font-family: sans-serif;
+    box-sizing: border-box;
+}
+body{
+    padding: 0px;
+    margin: 0px;
+    background-color: aliceblue;
+
+}
+
+header{
+    background-color: rgb(38, 38, 41);
+    height: 66px;
+}
+header .logo {
+    float: left;
+    border:1px solid ;
+    height: inherit;
+    margin-left: 2em;
+}
+header .logo-text{
+    
+    margin: 8px;
+}
+header .logo-text span{
+    color: rgb(143, 101, 37);
+}
+header ul{
+    float: right;
+    margin: 0px;
+    padding: 0px;
+    list-style: none;
+}
+header ul li{
+    float: left;
+    position: relative;
+
+}
+header ul li ul{
+    position: absolute;
+    top: 66px;
+    right: 0px;
+    width: 180px;
+    display: none;
+}
+header ul li:hover ul{
+    display: block;
+
+}
+header ul li ul li{
+    width: 100%;
+}
+header ul li ul li a{
+    padding: 10px;
+    color: rgb(38, 38, 41);
+}
+header ul li ul li a:hover{
+    padding: 10px;
+    background: rgb(143, 101, 37);
+    color: rgb(38, 38, 41);
+
+}
+
+header ul li ul li a.logout{
+    color: red;
+}
+header ul li a{
+    display: block;
+    padding: 21px;
+    font-size: 1.1em;
+    text-decoration: none;
+}
+header ul li a:hover {
+    background: rgb(143, 101, 37);
+    transition: 0.5s;
+
+}
+
+header .menu-toggle{
+    display: none;
+}
+header * {
+    color: white;
+}
+.slider-title{
+    text-align: center;
+}
+
+hr{
+    width: 75%;
+}
+.Content{
+    display: flex;
+    flex-direction: row;
+    margin: 50px;
+
+}
+.post{
+    width: 330px;
+    height: 300px;
+    background-color:white ;
+    margin: 15px;
+    box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+}
+img{
+    width: 100%;
+    height: 200px;
+}
+p{
+    margin: 15px;
+}
+h2{
+    margin: 15px;
+    font-weight: bold;
+}
+main{
+    margin: 35px;
+}
+.Recents-post{
+    
+    width: 250px;
+    height: 200px;
+
+}
+.posts{
+    background-color: aliceblue;
+    box-shadow: rgba(17, 17, 26, 0.1) 0px 4px 16px, rgba(17, 17, 26, 0.1) 0px 8px 24px, rgba(17, 17, 26, 0.1) 0px 16px 56px;
+    display: flex;
+    flex-direction: row;
+    margin: 15px;
+    border-radius: 5px;
+}
+.AI{
+    max-width: fit-content;
+}
+.post-text{
+    margin-top: 2px;
+}
+
+
+/*button*/
+button {
+    padding: 1.3em 3em;
+    font-size: 12px;
+    text-transform: uppercase;
+    letter-spacing: 2.5px;
+    font-weight: 500;
+    color: #000;
+    background-color: #fff;
+    border: none;
+    border-radius: 45px;
+    box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease 0s;
+    cursor: pointer;
+    outline: none;
+    margin-left: 50px;
+  }
+  
+  button:hover {
+    background-color: #23c483;
+    box-shadow: 0px 15px 20px rgba(46, 229, 157, 0.4);
+    color: #fff;
+    transform: translateY(-7px);
+  }
+  
+  button:active {
+    transform: translateY(-1px);
+  }
+
+/*Footer*/
+footer{
+    background-color: rgb(69, 66, 66);
+    width: 100%;
+    height: 250px;
+    margin: 0px;
+    padding: 0px;
+
+}
+.socials{
+    width: 5px;
+    height: 5px;
+    color: #ffffff;
+    cursor: pointer;
+    margin: 25px;
+}
+.socials-i{
+    width: 18%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    font-size: 20px;
+}
+.nav-listf{
+    display: flex;
+    text-decoration: none;
+    justify-content: space-between;
+    list-style: none;
+}
+.nav-listf a{
+    color: #ffffff;
+    text-decoration: none;
+    display: flex;
+    justify-content:space-between;
+    margin: 15px 0px;
+
+}
+.socials{
+    width: 5px;
+    height: 5px;
+    color: #ffffff;
+    cursor: pointer;
+    margin: 25px;
+}
+.socials-i{
+   width: 18%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    font-size: 20px;
+}
+.socials-i a{
+    width: 18%;
+     display: flex;
+     flex-direction: row;
+     align-items: center;
+     justify-content: center;
+     list-style: none;
+     font-size: 20px;
+ }
+.Follow{
+    color: #ffffff;
+    text-align: center;
+    padding: 15px;
+
+}
+
+
+
+
+
+/*media queries*/
+
+@media only screen and (max-width:750px){
+    header{
+        position: relative;
+    }
+    
+    
+    
+    
+    header ul {
+        width: 100%;
+        background: rgb(38, 38, 41);
+        max-height: 0px;
+        overflow: hidden;
+
+    }
+    .showing{
+        max-height: 100em;
+    }
+    header ul li{
+        width: 100%;
+    }
+    header ul li ul{
+        position: static;
+        display: block;
+        width: 100%;
+        background: inherit;
+    }
+    header ul li ul li a{
+        padding: 10px;
+        background: rgb(38, 38, 41);
+        color: white;
+    }
+    
+    header ul li ul li a.logout{
+        color: red;
+    }
+    header .menu-toggle{
+        display: block;
+        position: absolute;
+        right:20px;
+        top:10px;
+        font-size: 1.9em;
+
+
+    }
+}
+@media only screen and (max-width:1070px){
+    .Content{
+        display: flex;
+        flex-direction: column;
+        margin: 10px;
+        justify-content: center;
+        align-items: center;
+    }
+    .posts{
+        display: flex;
+        flex-direction: column;
+        margin: 10px;
+        justify-content: center;
+        align-items: center;
+    }
+}
